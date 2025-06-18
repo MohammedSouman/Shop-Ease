@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#200080">
+    <title>THINK | Online Shopping Website</title>
+    <link rel="stylesheet" href="/css/utilis.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/cart.js" async></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h4><span class="website-name brand-name">THINK</span></h4>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search products">
+                <i class="fa fa-search"></i>
+            </div>
+            <i class="fas fa-bars desk-hide" id="show-menu" onclick="showmenu()"></i>
+            <ul class="nav__links" id="navLinks">
+                <i class="fas fa-times desk-hide" id="hide-menu" onclick="hidemenu()"></i>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a class="cart-page" href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- Slider -->
+
+        <div class="slider-container">
+            <div class="slider-content">
+                <div class="slider-images">
+                    <a href="#"><img src="/img/Slider/slider1.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider2.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider3.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider4.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider5.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider6.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider7.jpg" alt=""></a>
+                    <a href="#"><img src="/img/Slider/slider8.jpg" alt=""></a>
+                </div>
+
+                <div onclick="sideSlide(-1)" class="slide left-arrow">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div onclick="sideSlide(1)" class="slide right-arrow">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+
+                <div class="btm-slider">
+                    <span onclick="btmSlide(1)"></span>
+                    <span onclick="btmSlide(2)"></span>
+                    <span onclick="btmSlide(3)"></span>
+                    <span onclick="btmSlide(4)"></span>
+                    <span onclick="btmSlide(5)"></span>
+                    <span onclick="btmSlide(6)"></span>
+                    <span onclick="btmSlide(7)"></span>
+                    <span onclick="btmSlide(8)"></span>
+                </div>
+            </div>
+        </div>
+        <!------Row 1------>
+        <div class="products">
+            <div class="row-title">
+                <h3>Headphones & Speakers</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Headphone</h4>
+                        <p class="product-status">Ship in 2-3 days</p>
+                        <h4 class="price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone2.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Ear Pods</h4>
+                        <p class="product-status">10% off</p>
+                        <h4 class="price dis-price">$15.00</h4>
+                        <h4 class="real-price">$17.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 3 -->
+                <div class="product-card">
+                    <div class="card-tag">4<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone3.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Earphones</h4>
+                        <p class="product-status">Ship in 2-3 days</p>
+                        <h4 class="price">$7.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 4 -->
+                <div class="product-card">
+                    <div class="card-tag">4.5<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone4.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Headphone</h4>
+                        <p class="product-status">Feel the music</p>
+                        <h4 class="price">$6.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 5 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone5.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Neckband Earphone</h4>
+                        <p class="product-status">Wireless Connection</p>
+                        <h4 class="price">$8.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 6 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone6.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Speaker</h4>
+                        <p class="product-status">Feel the beat, 10% off</p>
+                        <h4 class="price dis-price">$20.00</h4>
+                        <h4 class="real-price">$22.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------Row 2------>
+        <div class="products">
+            <div class="row-title">
+                <h3>Great Offers</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="/single product info/fast-track-watch.html"><img src="/img/Offers/offer1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Fast Track Watch</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">$6.00</h4>
+                        <h4 class="real-price">$8.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="/single product info/product-details.html">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer2.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Ear Pods</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">$12.00</h4>
+                        <h4 class="real-price">$17.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 3 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer3.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Laptop Bag</h4>
+                        <p class="product-status">Good quality,25% off</p>
+                        <h4 class="price dis-price">$7.50</h4>
+                        <h4 class="real-price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 4 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer4.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Handbag</h4>
+                        <p class="product-status">Stylish Handbags,35% off</p>
+                        <h4 class="price dis-price">$6.50</h4>
+                        <h4 class="real-price">$11.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 5 -->
+                <div class="product-card">
+                    <div class="card-tag">4.5<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="single product info/shirt.html"><img src="/img/Offers/shirt1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Black Shirt</h4>
+                        <p class="product-status">Peter England</p>
+                        <h4 class="price dis-price">$7.00</h4>
+                        <h4 class="real-price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="single product info/shirt.html">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 6 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer6.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Watch</h4>
+                        <p class="product-status">Waterproof,Black mat finish,25% off</p>
+                        <h4 class="price dis-price">$9.00</h4>
+                        <h4 class="real-price">$12.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------Row 3------>
+        <div class="products">
+            <div class="row-title">
+                <h3>Headphones & Speakers</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Headphone</h4>
+                        <p class="product-status">Ship in 2-3 days</p>
+                        <h4 class="price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone2.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Ear Pods</h4>
+                        <p class="product-status">10% off</p>
+                        <h4 class="price dis-price">$15.00</h4>
+                        <h4 class="real-price">$17.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 3 -->
+                <div class="product-card">
+                    <div class="card-tag">4<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone3.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Earphones</h4>
+                        <p class="product-status">Ship in 2-3 days</p>
+                        <h4 class="price">$7.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 4 -->
+                <div class="product-card">
+                    <div class="card-tag">4.5<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="#"><img class="product-img" src="/img/Headphones/headphone4.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title"> Headphone</h4>
+                        <p class="product-status">Feel the music</p>
+                        <h4 class="price">$6.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 5 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img class="product-img" src="/img/Headphones/headphone5.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Neckband Earphone</h4>
+                        <p class="product-status">Wireless Connection</p>
+                        <h4 class="price">$8.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 6 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Headphones/headphone6.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Speaker</h4>
+                        <p class="product-status">Feel the beat, 10% off</p>
+                        <h4 class="price dis-price">$20.00</h4>
+                        <h4 class="real-price">$22.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------Row 4------>
+        <div class="products">
+            <div class="row-title">
+                <h3>Great Offers</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="/single product info/fast-track-watch.html"><img src="/img/Offers/offer1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Fast Track Watch</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">$6.00</h4>
+                        <h4 class="real-price">$8.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="/single product info/product-details.html">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer2.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Ear Pods</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">$12.00</h4>
+                        <h4 class="real-price">$17.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 3 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer3.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Laptop Bag</h4>
+                        <p class="product-status">Good quality,25% off</p>
+                        <h4 class="price dis-price">$7.50</h4>
+                        <h4 class="real-price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 4 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer4.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Handbag</h4>
+                        <p class="product-status">Stylish Handbags,35% off</p>
+                        <h4 class="price dis-price">$6.50</h4>
+                        <h4 class="real-price">$11.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 5 -->
+                <div class="product-card">
+                    <div class="card-tag">4.5<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="single product info/shirt.html"><img src="/img/Offers/shirt1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Black Shirt</h4>
+                        <p class="product-status">Peter England</p>
+                        <h4 class="price dis-price">$7.00</h4>
+                        <h4 class="real-price">$10.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="single product info/shirt.html">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 6 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer6.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Watch</h4>
+                        <p class="product-status">Waterproof,Black mat finish,25% off</p>
+                        <h4 class="price dis-price">$9.00</h4>
+                        <h4 class="real-price">$12.00</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----Description---->
+        <div class="bussiness-description">
+            <h3 class="bussiness-heading">What is <span class="website-name">Think</span>?</h3>
+            <p class="bussiness-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos natus voluptatem perferendis quis! Deleniti quas deserunt pariatur nam cumque, praesentium voluptatibus quos exercitationem iusto numquam? Labore doloremque error impedit itaque vero consequuntur, nostrum dolorum sequi libero dolore quibusdam perferendis illum, laborum sed laudantium dolores. Omnis, dolor reiciendis. Ullam dolorem distinctio nihil excepturi! Repudiandae perferendis tenetur illo ut magnam commodi cum suscipit quibusdam, deserunt ea temporibus et, adipisci aperiam tempore! Molestias voluptate rerum expedita accusamus laboriosam eveniet cum explicabo rem voluptatibus veritatis atque sit, deleniti repudiandae totam itaque dolores nam ab quaerat est? Esse, perspiciatis neque vitae, unde modi alias suscipit reiciendis quaerat architecto nostrum tenetur nam molestias eius veritatis ut assumenda corrupti error totam distinctio? Quas iure ipsam neque, repellat inventore, laboriosam ut ullam sint eos doloremque sed laudantium nobis nesciunt sit sunt quae nihil minus praesentium, quidem aspernatur quos temporibus dolor? Aliquam nihil placeat alias.</p> 
+
+            <h3 class="brand-heading">Top brands in <span class="website-name">Think</span></h3>
+            <p class="brand-info bussiness-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, adipisci rem! Quaerat harum reprehenderit ipsa! Optio rem error quam! Sit, similique facere? Distinctio fugiat possimus vitae? Magnam ratione eius placeat, obcaecati nostrum quaerat dignissimos. Reprehenderit nemo nam corporis quos quis maxime eum cum praesentium laboriosam, enim libero vel quae assumenda impedit reiciendis quidem modi eos eaque numquam culpa. Possimus quos, perspiciatis hic perferendis rerum illum adipisci amet repudiandae voluptates sunt praesentium excepturi laudantium ex. Illo minima iure saepe commodi molestias tempore officia delectus, nisi mollitia ex nesciunt labore ducimus cupiditate ipsa voluptatum! Eaque voluptate exercitationem omnis cum dolor laborum vel architecto, atque qui error laudantium incidunt aliquid sunt tenetur temporibus at maiores in iusto quos. Molestias totam ratione, dolorem cupiditate reprehenderit autem animi impedit quisquam voluptates asperiores in accusantium tenetur recusandae tempora minus cumque veniam?</p>
+
+            <h3 class="brand-heading">Top brands in <span class="website-name">Think</span></h3>
+            <p class="brand-info bussiness-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, adipisci rem! Quaerat harum reprehenderit ipsa! Optio rem error quam! Sit, similique facere? Distinctio fugiat possimus vitae? Magnam ratione eius placeat, obcaecati nostrum quaerat dignissimos. Reprehenderit nemo nam corporis quos quis maxime eum cum praesentium laboriosam, enim libero vel quae assumenda impedit reiciendis quidem modi eos eaque numquam culpa. Possimus quos, perspiciatis hic perferendis rerum illum adipisci amet repudiandae voluptates sunt praesentium excepturi laudantium ex. Illo minima iure saepe commodi molestias tempore officia delectus, nisi mollitia ex nesciunt labore ducimus cupiditate ipsa voluptatum! Eaque voluptate exercitationem omnis cum dolor laborum vel architecto, atque qui error laudantium incidunt aliquid sunt tenetur temporibus at maiores in iusto quos. Molestias totam ratione, dolorem cupiditate reprehenderit autem animi impedit quisquam voluptates asperiores in accusantium tenetur recusandae tempora minus cumque veniam?</p>
+
+            <h3 class="Sell-products">How to sell in <span class="website-name">Think</span>?</h3>
+            <p class="brand-info bussiness-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, adipisci rem! Quaerat harum reprehenderit ipsa! Optio rem error quam! Sit, similique facere? Distinctio fugiat possimus vitae? Magnam ratione eius placeat, obcaecati nostrum quaerat dignissimos. Reprehenderit nemo nam corporis quos quis maxime eum cum praesentium laboriosam, enim libero vel quae assumenda impedit reiciendis quidem modi eos eaque numquam culpa. Possimus quos, perspiciatis hic perferendis rerum illum adipisci amet repudiandae voluptates sunt praesentium excepturi laudantium ex. Illo minima iure saepe commodi molestias tempore officia delectus, nisi mollitia ex nesciunt labore ducimus cupiditate ipsa voluptatum! Eaque voluptate exercitationem omnis cum dolor laborum vel architecto, atque qui error laudantium incidunt aliquid sunt tenetur temporibus at maiores in iusto quos. Molestias totam ratione, dolorem cupiditate reprehenderit autem animi impedit quisquam voluptates asperiores in accusantium tenetur recusandae tempora minus cumque veniam?</p>
+
+            <h3 class="Sell-products">How to sell in <span class="website-name">Think</span>?</h3>
+            <p class="brand-info bussiness-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, adipisci rem! Quaerat harum reprehenderit ipsa! Optio rem error quam! Sit, similique facere? Distinctio fugiat possimus vitae? Magnam ratione eius placeat, obcaecati nostrum quaerat dignissimos. Reprehenderit nemo nam corporis quos quis maxime eum cum praesentium laboriosam, enim libero vel quae assumenda impedit reiciendis quidem modi eos eaque numquam culpa. Possimus quos, perspiciatis hic perferendis rerum illum adipisci amet repudiandae voluptates sunt praesentium excepturi laudantium ex. Illo minima iure saepe commodi molestias tempore officia delectus, nisi mollitia ex nesciunt labore ducimus cupiditate ipsa voluptatum! Eaque voluptate exercitationem omnis cum dolor laborum vel architecto, atque qui error laudantium incidunt aliquid sunt tenetur temporibus at maiores in iusto quos. Molestias totam ratione, dolorem cupiditate reprehenderit autem animi impedit quisquam voluptates asperiores in accusantium tenetur recusandae tempora minus cumque veniam?</p>
+        </div>
+
+         <!-- ----Cart Item Details----
+        <div class="cart-page">
+            <div class="all-cart-products">
+                <div class="cart-header">
+                    <h3>Product</h3>
+                    <h3>Price</h3>
+                    <h3>Quantity</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total-cost">
+            <h4>Total : </h4>
+            <p class="cart-total-price">$0</p>
+        </div> -->
+    </main>
+    <footer>
+        <footer>
+            <div class="footer__row">
+                    <div class="footer__links">
+                        <h5 class="footer__heading">ABOUT</h5>
+                        <a href="#">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#"><span class="website-name"></span> Stories</a>
+                        <a href="#">Press</a>
+                        <a href="#"><span class="website-name"></span> Wholesale</a>
+                    </div>
+                    <div class="footer__links">
+                        <h5 class="footer__heading">HELP</h5>
+                        <a href="#">Payments</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Cancellation & Returns</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Report Infringement</a>
+                    </div>
+                    <div class="footer__links">
+                        <h5 class="footer__heading">Policy</h5>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">EPR Compliance</a>
+                    </div>
+                    <div class="footer__links">
+                        <h5 class="footer__heading">Social</h5>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Youtube</a>
+                    </div>
+                    <hr class="sep-line">
+                    <div class="footer__links mob__footer__links">
+                        <h5 class="footer__heading">Mail Us:</h5>
+                        <p class="footer__para"><span class="website-name"></span> Internet Private Limited,<br>
+                            Buildings Alyssa, Begonia &<br>
+                            Clove Embassy Tech Village,<br>
+                            Outer Ring Road, Devarabeesanahalli Village,<br>
+                            Chennai, 600003,<br>
+                            Tamilnadu, India
+                        </p>
+                    </div>
+                    <div class="footer__links mob__footer__links">
+                        <h5 class="footer__heading">Registered Office Address:</h5>
+                        <p class="footer__para">
+                            <span class="website-name"></span> Internet Private Limited,<br>
+                            Buildings Alyssa, Begonia &<br>
+                            Clove Embassy Tech Village,<br>
+                            Outer Ring Road, Devarabeesanahalli Village,<br>
+                            Chennai, 600003,<br>
+                            Tamilnadu, India<br>
+                            CIN : U51109KA2012PTC066107<br>
+                            Telephone: <a href="#">1800 202 9898</a>
+                        </p>
+                    </div>
+                </div>
+            <hr class="hr mob-hide">
+            <div class="icon__links">
+                <a href="#"><i class="fas fa-briefcase"></i> Sell On <span class="website-name"></span></a>
+                <a href="#"><i class="fas fa-star"></i> Advertise</a>
+                <a href="#"><i class="fas fa-gift"></i> Gift Cards</a>
+                <a href="#"><i class="fas fa-question"></i> Help Center</a>
+                <span>&copy; 2007-2021 <span class="website-name"></span>.com</span>
+                <span><img src="/img/Cards/card1.svg" alt=""></span>
+            </div>
+            <hr >
+            <div class="desk-hide copyright">&copy; 2007-2021 <span class="website-name"></span>.com</div>
+        <div class="back-to-top" onclick="scrollToTop()">
+            <h3>Back to top</h3>
+        </div>
+    </footer>
+
+    <script src="/js/index.js" async></script>
+    <script src="/js/product-detail.js" async></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/utilis.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Account | THINK</title>
+</head>
+<body id = "body">
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>ICON</h4>
+            </div>
+            <div class="search">
+                <h4><span class="website-name brand-name">THINK</span></h4>
+                <input type="text" name="search" id="search" placeholder="Search products">
+                <i class="fa fa-search"></i>
+            </div>
+            <i class="fas fa-bars desk-hide" id="show-menu" onclick="showmenu()"></i>
+            <ul class="nav__links account-ul" id="navLinks">
+                <i class="fas fa-times desk-hide" id="hide-menu" onclick="hidemenu()"></i>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <div class="container">
+            <div class="login-form">
+                <form action="">
+                        <h2 class="login-heading">THINK</h2>
+                        <input type="email" id="log-username" pattern="[a-zA-Z0-9] + @[a-zA-Z] + ." placeholder="Phone number,email or username" required> 
+                        <br>
+                        <label for="log-password" class="aa">
+                            <input type="password" id="log-password" placeholder="Password" required>
+                            <!-- <p class="X-password-syntax">It must be greater than 6 characters</p> -->
+                            <i class="fas fa-eye show"></i>
+                        </label>
+                        <input type="submit" class="login-btn" value="LOGIN">
+                        <br>
+                        <div class="forgot-password"><a href="#">Forgot your password?</a></div>
+                        <span>Don't have an account?</span>
+                        <span class="sign-up">Sign up</span>
+                    </form>
+            </div>
+            <div class="register-form">
+                <form action="">
+                    <h2 class="login-heading">THINK</h2>
+                    <input type="text" id="reg-username" placeholder="Username" required> 
+                    <br>
+                    <input type="password" id="reg-password" placeholder="Create a Password" required>
+                    <i class="fas fa-eye reg-show show"></i>
+                    <br>
+                    <input type="email" id="reg-email" placeholder="Email" required>
+                    <br>
+                    <input type="tel" id="reg-phone" placeholder="Phone number(optional)">
+                    <input type="submit" class="register-btn" value="REGISTER">
+                    <br>
+                    <span>Already have an account?</span>
+                    <span class="log-in">Log in</span>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/account.js" async></script>
+</body>
+</html>

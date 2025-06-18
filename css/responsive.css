@@ -1,0 +1,147 @@
+:root {
+    --primaryClr: #800080;
+    --secondaryClr: #ffd700;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1050px) {
+
+    /*______________________FOR HOME PAGE______________________*/
+
+    body {
+        /* width: 100vw; */
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        min-height: 100vh;
+        height: max-content;
+        background: linear-gradient(130deg,var(--primaryClr) 73% ,var(--secondaryClr) 74%);
+        z-index: 199;
+        transition: all 0.5s ease-in-out;
+        padding: 25px 10px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .fa-bars, .fa-times {
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    nav ul li a {
+        white-space: nowrap;
+        font-weight: 600;
+    }
+
+    .product-card {
+        margin-bottom: 22px;
+    }
+
+    .card-header a img {
+        max-width: 105px;
+        height: 105px;
+    }
+
+    .product-title {
+        font-size: 13.5px;
+    }
+
+    .product-status {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        padding: 8px 30px;
+    }
+
+    .btn-secondary {
+        padding: 8px 14px;
+    }
+
+    .bussiness-description h3 {
+        font-size: 14px;
+    }
+
+    .bussiness-description .bussiness-info {
+        font-size: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .mob__footer__links {
+        display: none;
+    }
+
+
+    /* __________________FOR PRODUCT PAGE_____________________ */
+
+    .next-page {
+        transform: translateX(0);
+        margin-left: 50px;
+    }
+
+    .next-page a {
+        font-size: 13px;
+        width: 34px;
+        height: 34px;
+    }
+
+    /*_____________________________FOR SINGLE PAGE__________________________*/
+
+    .col-2 {
+        margin: 5% 0;
+    }
+
+    #shirtImg {
+        height: auto;
+    }
+
+    .col-2 h1 {
+        font-size: 15px;
+    }
+
+    .col-2 .product-points, .col-2 p {
+        font-size: 13px;
+    }
+
+    select {
+        padding: 3px 0;
+    }
+
+    .stock-availabilty,.col-2 b, .col-2 h4,.col-2 details, .col-2 .ratings i{
+        font-size: 14px;
+    }
+
+    input {
+        width: 50px;
+        padding: 4px;
+    }
+
+    .buy-product, .cart-btn {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    /* __________________________ACCOUNT CSS___________________________________*/
+
+.account-ul {
+    background: linear-gradient(130deg,#051622 73%, var(--secondaryClr) 74%);
+}
+
+}

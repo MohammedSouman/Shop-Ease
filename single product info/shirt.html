@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#200080">
+    <title>Black Shirt | THINK</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utilis.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>ICON</h4>
+            </div>
+            <div class="search">
+                <h4>THINK</h4>
+                <input type="text" name="search" id="search" placeholder="Search products">
+                <i class="fa fa-search"></i>
+            </div>
+            <i class="fas fa-bars desk-hide" id="show-menu" onclick="showmenu()"></i>
+            <ul class="nav__links" id="navLinks">
+                <i class="fas fa-times desk-hide" id="hide-menu" onclick="hidemenu()"></i>
+                <li><a href="/index.html">Home</a> </li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/account.html">Account</a></li>
+                <li><a href="/cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+
+        <!------Single Product Detail------>
+
+        <div class="single-product" id="shirt">
+            <div class="col-2">
+                <div class="main-img shirt-img" id="shirtImg">
+                    <img src="/img/Offers/shirt1.jpg" id="productImage"  width="100%">
+                </div>
+                <div class="sub-images">
+                    <img src="/img/Offers/shirt1.jpg"  width="100%" class="smallImage">
+                    <img src="/img/Offers/shirt1-1.jpg"  width="100%" class="smallImage">
+                    <img src="/img/Offers/shirt1-2.jpg"  width="100%" class="smallImage">
+                    <img src="/img/Offers/shirt1-3.jpg"  width="100%" class="smallImage">
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>PLain Black Shirt</h1>
+                <p>100% Cotton</p>
+                <br>
+                <select name="" id="">
+                    <option>Black</option>
+                </select>
+                <select name="" id="size">
+                    <option>Select your size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <div class="stock-availability">
+                    <h4 class="stock">Availability in stock :</h4>
+                    <span id="stockValue"></span><br>
+                </div>
+                <label for="quantity"><b>Quantity : </b></label>
+                <input type="number" id="quantity" value="1" min="1">
+                <div class="product-details">
+                    <h4>Product Details &nbsp;&nbsp;<i class="fas fa-indent"></i></h4>
+                    <br><br>
+                    <p class="product-points"><i class="fas fa-circle"></i>Brand : Peter England</p>
+                    <br>
+                    <p class="product-points"><i class="fas fa-circle"></i>100% Cotton pure black</p>
+                    <br>
+                    <p class="product-points"><i class="fas fa-circle"></i> Ship in 2-3 days</p>
+                    <br>
+                        <details>
+                            <summary>More</summary>
+                                <br>
+                                <p class="product-points"><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                                <br>
+                                <p class="product-points"><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                                <br>
+                                <p class="product-points"><i class="fas fa-circle"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                                <br>
+                        </details>
+                </div>
+                <h4 class="price dis-price">7$</h4>
+                <h4 class="real-price">10$</h4>
+                <h4 class="discount">30% off</h4>
+                <div class="ratings">
+                    <h4>Ratings : </h4>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star-half-alt"></i></span>
+                </div>
+                <div class="buy-product">Buy</div>
+                <div class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></div>
+            </div>
+        </div>
+
+
+        <div class="products">
+            <div class="row-title">
+                <h3>Related Products</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <!-- Col 1 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="/Buy-Page/fast-track.html"><img src="/img/Offers/offer1.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Fast Track Watch</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">7$</h4>
+                        <h4 class="real-price">10$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="/Buy-Page/fast-track.html">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-check"></i> Certified Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer2.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Ear Pods</h4>
+                        <p class="product-status">30% off</p>
+                        <h4 class="price dis-price">12$</h4>
+                        <h4 class="real-price">17$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+                <!-- Col 3 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer3.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Laptop Bag</h4>
+                        <p class="product-status">Good quality,25% off</p>
+                        <h4 class="price dis-price">7.5$</h4>
+                        <h4 class="real-price">10$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+                <!-- Col 4 -->
+                <div class="product-card">
+                    <div class="card-tag"><i class="fas fa-shipping-fast"></i> Only few left</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer4.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Handbag</h4>
+                        <p class="product-status">Stylish Handbags,35% off</p>
+                        <h4 class="price dis-price">6.5$</h4>
+                        <h4 class="real-price">11$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+                <!-- Col 5 -->
+                <div class="product-card">
+                    <div class="card-tag">4<i class="fas fa-star"></i>Ratings</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer5.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Hybrid Bag</h4>
+                        <p class="product-status">For school,college,20% off</p>
+                        <h4 class="price dis-price">6.5$</h4>
+                        <h4 class="real-price">8$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+                <!-- Col 6 -->
+                <div class="product-card">
+                    <div class="card-tag">#1 Best Seller</div>
+                    <div class="card-header">
+                        <a href="#"><img src="/img/Offers/offer6.jpg" alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Watch</h4>
+                        <p class="product-status">Waterproof,Black mat finish,25% off</p>
+                        <h4 class="price dis-price">9$</h4>
+                        <h4 class="real-price">12$</h4>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary"><a href="#">Buy</a></div>
+                        <div class="btn btn-secondary" name="cartadd"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="back-to-top" onclick="scrollToTop()">
+            <h3>Back to top</h3>
+        </div>
+    </footer>
+
+    <script src="/js/product-detail.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

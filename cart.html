@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#200080">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utilis.css">
+    <script src="/js/cart.js" async></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>ICON</h4>
+            </div>
+            <div class="search">
+                <h4>THINK</h4>
+                <input type="text" name="search" id="search" placeholder="Search products">
+                <i class="fa fa-search"></i>
+            </div>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!------Cart Item Details------>
+        <div class="cart-page">
+            <div class="all-cart-products">
+                <div class="cart-header">
+                    <h3>Product</h3>
+                    <h3>Price</h3>
+                    <h3>Quantity</h3>
+                </div>
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-product">
+                            <a href="/single product info/shirt.html"><img src="/img/Offers/shirt1.jpg" alt=""></a>
+                            <div class="title">Black Shirt</div>
+                        </div>
+                        <div class="cart-price">$10.00</div>
+                        <div class="cart-col-3">
+                            <input type="number" class="cart-quantity-input" value="1" min="1">
+                            <div class="remove-btn">Remove</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-items">
+                    <div class="cart-row">
+                        <div class="cart-product">
+                            <a href="single product info/fast-track-watch.html"> <img src="/img/Offers/offer1.jpg"
+                                    alt=""></a>
+                            <div class="title">Fast Track watch</div>
+                        </div>
+                        <div class="cart-price">$7.00</div>
+                        <div class="cart-col-3">
+                            <input type="number" class="cart-quantity-input" value="1" min="1">
+                            <div class="remove-btn">Remove</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <div class="cart-total-cost">
+            <h4>Total : </h4>
+            <p class="cart-total-price">$17.00</p>
+        </div>
+    </main>
+    <footer>
+        <div class="back-to-top" onclick="scrollToTop()">
+            <h3>Back to top</h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>

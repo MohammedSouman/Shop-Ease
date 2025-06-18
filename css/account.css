@@ -1,0 +1,139 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1d2228;
+} 
+
+main {
+    padding: 50px 0;
+    min-height: calc(100vh - 81.5px);
+    background-color: #051622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    height: 450px;
+    position: relative;
+}
+
+form {
+    width: 350px;
+    min-height: 300px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    border: 2px solid #ffb600;
+    box-shadow: -6px 6px rgba(255, 255, 255, 0.4);
+    /* box-shadow: -10px 10px rgba(0, 0, 0, 0.3); */
+    position: relative;
+}
+
+.login-form {
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.login-heading {
+    margin: 15px;
+}
+
+form input {
+    margin: 20px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+form input:focus {
+    outline: none;
+}
+
+form input:focus::placeholder {
+    color: rgba(31, 27, 27, 0.8);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.show {
+    color: #000;
+    position: absolute;
+    top: 46%;
+    right: 55px;
+}
+
+.reg-show {
+    color: #000;
+    position: absolute;
+    top: 36.5%; 
+    right: 55px;
+}
+
+.forgot-password {
+    margin: 15px 0;
+    position: relative;
+}
+
+.forgot-password a {
+    color: #fff;
+}
+
+.login-btn,.register-btn {
+    margin: 10px;
+    width: 250px;
+    background-color: #ffb600;
+    padding: 5px;
+    color: #fff;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.login-btn:focus,.register-btn:focus {
+    border: none;
+}
+
+.login-btn:hover,.register-btn:hover {
+    background-color: #ff7a00;
+}
+
+span {
+    display: inline-block;
+    margin: 13px 0;
+    cursor: pointer;
+    font-weight: 600;
+    /* font-size: 16px; */
+}
+
+.register-form {
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.aa {
+    
+}

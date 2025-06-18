@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: grid; 
+    place-items: center;
+}
+
+.btn {
+    padding: 16px 48px;
+    background-color: none;
+    border: 2px solid #131313;
+    color: #131313;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: rgba(225, 225, 225, 0.4);
+    top: -10%;
+    transform: skewX(30deg) translate(-150%, 50%);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff7a00;
+    color: #fff;
+}
+
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
